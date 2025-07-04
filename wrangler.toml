@@ -6,7 +6,7 @@ compatibility_flags = ["nodejs_compat"]
 
 
 [vars]
-MODE = "prod"
+MODE = "demo"
 DEMO_CLEAR_INTERVAL = "5"
 
 [[kv_namespaces]]
@@ -15,7 +15,7 @@ id = "flrbin"
 preview_id = "f572e242ba264549bdacb3d89dc94623" #make sure to update this before deployment
 
 [triggers]
-crons = ["*/5 * * * *"]
+crons = ["* * * * *"]
 
 [assets]
 directory = "./static"
