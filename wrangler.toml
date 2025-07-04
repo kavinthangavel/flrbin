@@ -9,13 +9,11 @@ DEMO_CLEAR_INTERVAL = "5"
 
 [[kv_namespaces]]
 binding = "KV"
-id = ""
-preview_id = "your-preview-kv-namespace-id"
+id = "flrbin"
+preview_id = "f572e242ba264549bdacb3d89dc94623"
 
 [triggers]
 crons = ["*/5 * * * *"]
 
-[[rules]]
-type = "Text"
-globs = ["**/*.ts", "**/*.js"]
-fallthrough = true
+[assets]
+directory = "./static"
