@@ -1,0 +1,21 @@
+name = "flrbin"
+main = "src/index.ts"
+compatibility_date = "2024-01-15"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+MODE = "prod"
+DEMO_CLEAR_INTERVAL = "5"
+
+[[kv_namespaces]]
+binding = "KV"
+id = ""
+preview_id = "your-preview-kv-namespace-id"
+
+[triggers]
+crons = ["*/5 * * * *"]
+
+[[rules]]
+type = "Text"
+globs = ["**/*.ts", "**/*.js"]
+fallthrough = true
